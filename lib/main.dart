@@ -1,14 +1,10 @@
-// https://dart.dev/language
-// https://docs.flutter.dev
-// https://m3.material.io/styles/icons/overview
-
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
-} // the main() function to run the app defined in MyApp
+} 
 
 // Widgets are the elements from which consists every Flutter app. Even the app itself is a widget.
 // MyApp sets up the whole app. It creates the app-wide state, names the app, defines the visual theme, and sets the "home" widget—the starting point of your app:
