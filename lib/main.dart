@@ -1,23 +1,3 @@
-// Flutter provides several widgets that help you make your apps automatically responsive. For example, Wrap is a widget similar to Row or Column that automatically wraps children to the next "line" (called "run") when there isn't enough vertical or horizontal space. There's FittedBox, a widget that automatically fits its child into available space according to your specifications.
-// The widget to use, in this case, is LayoutBuilder. It lets you change your widget tree depending on how much available space you have
-// But NavigationRail doesn't automatically show labels when there's enough space because it can't know what is enough space in every context. It's up to you, the developer, to make that call.
-// Say you decide to show labels only if MyHomePage is at least 600 pixels wide.
-// Note: Flutter works with logical pixels as a unit of length. They are also sometimes called device-independent pixels. A padding of 8 pixels is visually the same regardless of whether the app is running on an old low-res phone or a newer ‘retina' device. There are roughly 38 logical pixels per centimeter, or about 96 logical pixels per inch, of the physical display.
-
-// use Flutter's Refactor menu in VS Code to make the required changes:
-// Inside _MyHomePageState's build method, put your cursor on Scaffold.
-// Call up the Refactor menu.
-// Select Wrap with Builder and press Enter.
-// Modify the name of the newly added Builder to LayoutBuilder.
-// Modify the callback parameter list from (context) to (context, constraints).
-
-// *
-// LayoutBuilder's builder callback is called every time the constraints change. This happens when, for example:
-// The user resizes the app's window
-// The user rotates their phone from portrait mode to landscape mode, or back
-// Some widget next to MyHomePage grows in size, making MyHomePage's constraints smaller
-
-
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
